@@ -1,0 +1,67 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bannerGrad)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+  
+  <!-- Decorative Circles -->
+  <circle cx="100" cy="60" r="40" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="1100" cy="240" r="60" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="250" cy="250" r="30" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1000" cy="60" r="50" fill="rgba(255,255,255,0.08)"/>
+  
+  <!-- Tool Icons Left Side -->
+  <g transform="translate(120, 100)" opacity="0.4">
+    <!-- Hammer -->
+    <rect x="-5" y="0" width="10" height="50" fill="#ffffff" rx="2"/>
+    <rect x="-20" y="-5" width="40" height="12" fill="#ffffff" rx="2"/>
+  </g>
+  
+  <g transform="translate(200, 220)" opacity="0.3">
+    <!-- Wrench -->
+    <path d="M 0 -30 L 0 0 L 10 10 L 20 0 L 10 -10 L 5 -5 L 5 -30 Z" fill="#ffffff"/>
+    <circle cx="15" cy="-5" r="8" fill="none" stroke="#ffffff" stroke-width="3"/>
+  </g>
+  
+  <!-- Tool Icons Right Side -->
+  <g transform="translate(1050, 110)" opacity="0.4">
+    <!-- Screwdriver -->
+    <rect x="-3" y="0" width="6" height="40" fill="#ffffff" rx="1"/>
+    <polygon points="-8,-5 8,-5 3,0 -3,0" fill="#ffffff"/>
+  </g>
+  
+  <g transform="translate(980, 80)" opacity="0.3">
+    <!-- Drill -->
+    <rect x="0" y="0" width="40" height="15" fill="#ffffff" rx="2"/>
+    <rect x="40" y="5" width="15" height="5" fill="#ffffff"/>
+  </g>
+  
+  <!-- Main Logo/Text Section -->
+  <g transform="translate(600, 150)">
+    <!-- HireTrades Text -->
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" 
+          fill="#ffffff" text-anchor="middle" letter-spacing="2">HireTrades</text>
+    
+    <!-- Tagline -->
+    <text x="0" y="45" font-family="Arial, Helvetica, sans-serif" font-size="24" 
+          fill="rgba(255,255,255,0.95)" text-anchor="middle">Your Trusted Trade Professionals</text>
+    
+    <!-- Decorative Line -->
+    <line x1="-150" y1="70" x2="150" y2="70" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  </g>
+  
+  <!-- Bottom Info -->
+  <text x="600" y="270" font-family="Arial, Helvetica, sans-serif" font-size="16" 
+        fill="rgba(255,255,255,0.7)" text-anchor="middle">Connecting Homeowners with Verified Trade Professionals</text>
+</svg>
