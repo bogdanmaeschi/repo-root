@@ -4,10 +4,7 @@
   "private": true,
   "dependencies": {
     "@capacitor/core": "5.7.8",
-    "@capacitor/camera": "5.7.8",
-    "@capacitor/geolocation": "5.7.8",
     "@capacitor/ios": "5.7.8",
-    "@capacitor/push-notifications": "5.7.8",
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-accordion": "^1.2.8",
     "@radix-ui/react-alert-dialog": "^1.1.11",
@@ -85,6 +82,7 @@
     ],
     "development": [
       "last 1 chrome version",
+      "last 1 firefox version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
