@@ -1,3 +1,26 @@
-- name: Sync Capacitor
-  script: |
-    npx cap sync ios
+workflows:
+  ios-build:
+    name: HireTrades iOS Build
+    max_build_duration: 60
+    environment:
+      node: 18
+      xcode: latest
+
+    scripts:
+      - name: Install dependencies
+        script: |
+          rm -f package-lock.json
+          npm install --legacy-peer-deps
+
+      - name: Sync Capacitor
+        script: |
+          npx cap sync ios
+
+      - name: Install CocoaPods
+        script: |
+          cd ios/App
+          pod install
+
+      - name: Build iOS
+        script: |
+          xcodebuild -workspace ios/App/App.xcworkspace -scheme App -sdk iphoneos -configuration Release archive -archivePath $CM_BUILD_DIR/App.xcarchive
